@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>marksheet generator also pass fail on 40</title>
+    </head>
+    <body>
+        <p>my output</p>
+        <p id = "demo"></p>
+    <script>
+        function generateMarksheet() {
+            var name = "Rachit";
+            var subject1 = 85;
+            var subject2 = 90;
+            var subject3 = 78;
+            var totalMarks = subject1 + subject2 + subject3;
+            var averageMarks = totalMarks / 3;
+            document.getElementById("demo").innerHTML = "Name: " + name + "<br>" +
+                "Subject 1: " + subject1 + "<br>" +
+                "Subject 2: " + subject2 + "<br>" +
+                "Subject 3: " + subject3 + "<br>" +
+                "Total Marks: " + totalMarks + "<br>" +
+                "Average Marks: " + averageMarks.toFixed(2) + "<br>" +
+                "Result: " + (subject1 >= 40 && subject2 >= 40 && subject3 >= 40 ? "Pass" : "Fail") + "<br>";
+        }
+        </script>
+    </body>
+</html>

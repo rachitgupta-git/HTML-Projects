@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #name {
+            font-size: 24px;
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav li {
+            margin-left: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #555;
+            color: #fff;
+            cursor: pointer;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #about {
+            display: flex;
+            align-items: center;
+        }
+        #about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .project, .skill {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .skill img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        #recommendations ul {
+            list-style: none;
+            padding: 0;
+        }
+        #recommendations li {
+            background-color: #e9e9e9;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        #rec-form {
+            margin-top: 20px;
+        }
+        #rec-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        #rec-form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #home {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body id="top">
+    <header>
+        <h1 id="name">Rachit Gupta</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Project details</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="https://via.placeholder.com/150" alt="Profile Image">
+        <div>
+            <h3>Rachit Gupta</h3>
+            <p>I am Rachit Gupta from Chhattisgarh, Bhilai. Currently pursuing B.Tech in CSE (AIML) at Rungta International Skills University, I am passionate about technology, artificial intelligence, and web development.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Project Details</h2>
+        <div class="project">
+            <h3>AI-Powered Chatbot</h3>
+            <p>A conversational AI chatbot built using Python and NLP libraries, capable of answering queries and learning from interactions.</p>
+        </div>
+        <div class="project">
+            <h3>Image Recognition System</h3>
+            <p>A machine learning project using TensorFlow for image classification, trained on custom datasets for object detection.</p>
+        </div>
+        <div class="project">
+            <h3>Data Analysis Dashboard</h3>
+            <p>An interactive dashboard using Python and Pandas for data visualization and analysis, featuring real-time data processing.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <img src="https://via.placeholder.com/50" alt="HTML Logo">
+            <p>HTML5</p>
+        </div>
+        <div class="skill">
+            <img src="https://via.placeholder.com/50" alt="CSS Logo">
+            <p>CSS3</p>
+        </div>
+        <div class="skill">
+            <img src="https://via.placeholder.com/50" alt="JS Logo">
+            <p>JavaScript</p>
+        </div>
+        <div class="skill">
+            <img src="https://via.placeholder.com/50" alt="Python Logo">
+            <p>Python</p>
+        </div>
+        <div class="skill">
+            <img src="https://via.placeholder.com/50" alt="ML Logo">
+            <p>Machine Learning</p>
+        </div>
+        <div class="skill">
+            <img src="https://via.placeholder.com/50" alt="AI Logo">
+            <p>Artificial Intelligence</p>
+        </div>
+    </section>
+
+    <section id="recommendations">
+        <h2>Recommendations</h2>
+        <ul id="rec-list">
+            <li>"Rachit Gupta is an outstanding student in our B.Tech CSE (AIML) program at Rungta International Skills University. His passion for artificial intelligence and quick grasp of complex concepts make him a valuable asset to any team."</li>
+            <li>"Working on group projects with Rachit has been inspiring. His innovative approach to problem-solving in web development and machine learning is commendable."</li>
+            <li>"As a peer from Bhilai, I highly recommend Rachit for his dedication and enthusiasm towards technology. His projects demonstrate a strong foundation in CSE and AIML."</li>
+        </ul>
+        <form id="rec-form">
+            <input type="text" id="rec-text" placeholder="Add a recommendation" required>
+            <button type="submit">Submit Recommendation</button>
+        </form>
+    </section>
+
+    <a href="#top" id="home">↑</a>
+
+    <script>
+        document.getElementById('rec-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const recText = document.getElementById('rec-text').value;
+            const li = document.createElement('li');
+            li.textContent = recText;
+            document.getElementById('rec-list').appendChild(li);
+            document.getElementById('rec-text').value = '';
+            alert('Thank you for your recommendation!');
+        });
+    </script>
+</body>
+</html>

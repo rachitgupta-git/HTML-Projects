@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>leap year</title>
+    </head>
+    <body>
+        <p>my output</p>
+        <p id = "demo"></p>
+    <script>
+        function checkLeapYear() {
+            var year = 2020;
+            var isLeapYear = (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+            document.getElementById("demo").innerHTML = year + " is " + (isLeapYear ? "a leap year." : "not a leap year.");
+        }
+      
+        </script>
+    </body>
+</html>

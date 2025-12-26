@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <title>Shopping Cart</title>
+</head>
+
+<body>
+  <h3>Shopping Cart</h3>
+  <p id="demo"></p>
+
+  <script>
+    let cart = [];
+    cart.push("laptop");
+    cart.push("mouse");
+    cart.push("mouse");
+
+    console.log(cart);
+    let removedItem = cart.pop();    
+    let newCart = cart;            
+    console.log('removed:', removedItem);
+    console.log('newCart:', newCart);
+    document.getElementById('demo').innerText = "Cart items: " + cart + "\n removed item: " + removedItem;
+  </script>
+
+</body>
+</html>

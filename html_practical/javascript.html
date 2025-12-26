@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>swapping of two numbers</title>
+    </head>
+    <body>
+        <p>my output</p>
+        <p id = "demo"></p>
+    <script>
+        function swapNumbers() {
+            var a = 5; 
+            var b = 10;
+            document.getElementById("demo").innerHTML = "Before swapping: a = " + a + ", b = " + b;
+            var temp = a;
+            a = b;
+            b = temp;
+            document.getElementById("demo").innerHTML += "<br>After swapping: a = " + a + ", b = " + b;
+        } 
+        </script>
+    </body>
+</html>

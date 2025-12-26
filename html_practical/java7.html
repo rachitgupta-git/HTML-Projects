@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>positive or negative</title>
+    </head>
+    <body>
+        <p>my output</p>
+        <p id = "demo"></p>
+    <script>
+        function checkPositiveOrNegative() {
+            var number = -5;
+            var result = (number >= 0) ? "positive" : "negative";
+            document.getElementById("demo").innerHTML = "The number " + number + " is " + result + ".";
+        }
+        checkPositiveOrNegative();
+        </script>
+    </body>
+</html>

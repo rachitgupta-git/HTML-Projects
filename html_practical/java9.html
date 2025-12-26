@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+  <title>Favorite Movies</title>
+</head>
+<body>
+  <h3>Favorite movies</h3>
+  <div id="demo"></div>
+
+  <script>
+    const movies = ["Stranger Things", "Incedeous", "The Dark Knight", "Krish 3", "Interstellar"];
+    const firstMovie = movies[0];
+    const lastMovie = movies[movies.length - 1];
+
+    document.getElementById('demo').innerText = "First movie: " + firstMovie + "\nLast movie: " + lastMovie;
+    console.log('First movie:', firstMovie);
+    console.log('Last movie:', lastMovie);
+  </script>
+</body>
+</html>
